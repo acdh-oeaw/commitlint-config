@@ -3,12 +3,12 @@
 	"version": "1.0.0",
 	"license": "MIT",
 	"type": "module",
-	"main": "./commitlintrc.json",
+	"main": "./commitlint.config.js",
 	"exports": {
-		"default": "./commitlintrc.json"
+		"default": "./commitlint.config.js"
 	},
 	"files": [
-		"./commitlintrc.json"
+		"./commitlint.config.js"
 	],
 	"packageManager": "pnpm@9.10.0",
 	"scripts": {
@@ -23,16 +23,17 @@
 		"validate": "run-p format:check"
 	},
 	"dependencies": {
-		"@commitlint/config-conventional": "^19.4.1"
+		"@commitlint/config-conventional": "^19.5.0"
 	},
 	"peerDependencies": {
-		"@commitlint/cli": "^19.0.3"
+		"@commitlint/cli": "19.x"
 	},
 	"devDependencies": {
 		"@acdh-oeaw/prettier-config": "^2.0.0",
 		"@changesets/changelog-github": "^0.5.0",
 		"@changesets/cli": "^2.27.8",
-		"@commitlint/cli": "^19.4.1",
+		"@commitlint/cli": "^19.5.0",
+		"@commitlint/types": "^19.5.0",
 		"is-ci": "^3.0.1",
 		"lint-staged": "^15.2.10",
 		"npm-run-all": "^4.1.5",
@@ -41,7 +42,7 @@
 		"typescript": "^5.6.2"
 	},
 	"commitlint": {
-		"extends": "./commitlintrc.json"
+		"extends": "./commitlint.config.js"
 	},
 	"lint-staged": {
 		"*": "prettier --cache --ignore-unknown --write"
