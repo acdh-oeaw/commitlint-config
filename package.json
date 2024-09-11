@@ -16,7 +16,7 @@
 		"changeset:status": "changeset status --verbose",
 		"ci:release": "changeset publish",
 		"ci:version": "changeset version && prettier \"**/CHANGELOG.md\" --write",
-		"format:check": "prettier . --cache --check --ignore-path ./.gitignore",
+		"format:check": "prettier . --cache --cache-location ./.prettiercache --check --ignore-path ./.gitignore",
 		"format:fix": "pnpm run format:check --write",
 		"prepare": "run-s setup",
 		"setup": "is-ci || simple-git-hooks",
@@ -45,7 +45,7 @@
 		"extends": "./commitlint.config.js"
 	},
 	"lint-staged": {
-		"*": "prettier --cache --ignore-unknown --write"
+		"*": "prettier --cache --cache-location ./.prettiercache --ignore-unknown --write"
 	},
 	"prettier": "@acdh-oeaw/prettier-config",
 	"simple-git-hooks": {

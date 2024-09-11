@@ -5,5 +5,8 @@ node_modules/
 # logs
 *.log
 
+# caches
+.prettiercache
+
 # misc
 .DS_Store
