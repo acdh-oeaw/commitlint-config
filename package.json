@@ -2,6 +2,9 @@
 	"name": "@acdh-oeaw/commitlint-config",
 	"version": "2.0.0",
 	"license": "MIT",
+	"repository": {
+		"url": "https://github.com/acdh-oeaw/commitlint-config"
+	},
 	"type": "module",
 	"main": "./commitlint.config.js",
 	"exports": {
