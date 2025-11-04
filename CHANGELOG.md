@@ -1,5 +1,13 @@
 # @acdh-oeaw/commitlint-config
 
+## 3.0.0
+
+### Major Changes
+
+- [#7](https://github.com/acdh-oeaw/commitlint-config/pull/7)
+  [`b3a75cb`](https://github.com/acdh-oeaw/commitlint-config/commit/b3a75cb9004403bccd11a63078195b4a51769517)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - bump commitlint to 20.x
+
 ## 2.0.0
 
 ### Major Changes
