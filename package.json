@@ -13,36 +13,36 @@
 	"files": [
 		"./commitlint.config.js"
 	],
-	"packageManager": "pnpm@9.10.0",
+	"packageManager": "pnpm@10.20.0",
 	"scripts": {
 		"changeset:add": "changeset add",
 		"changeset:status": "changeset status --verbose",
 		"ci:release": "changeset publish",
 		"ci:version": "changeset version && prettier \"**/CHANGELOG.md\" --write",
-		"format:check": "prettier . --cache --cache-location ./.prettiercache --check --ignore-path ./.gitignore",
+		"format:check": "prettier . --cache --cache-location ./.prettiercache --check",
 		"format:fix": "pnpm run format:check --write",
 		"prepare": "run-s setup",
-		"setup": "is-ci || simple-git-hooks",
+		"setup": "is-in-ci || simple-git-hooks",
 		"validate": "run-p format:check"
 	},
 	"dependencies": {
-		"@commitlint/config-conventional": "^19.5.0"
+		"@commitlint/config-conventional": "^20.0.0"
 	},
 	"peerDependencies": {
-		"@commitlint/cli": "19.x"
+		"@commitlint/cli": "20.x"
 	},
 	"devDependencies": {
-		"@acdh-oeaw/prettier-config": "^2.0.0",
-		"@changesets/changelog-github": "^0.5.0",
-		"@changesets/cli": "^2.27.8",
-		"@commitlint/cli": "^19.5.0",
-		"@commitlint/types": "^19.5.0",
-		"is-ci": "^3.0.1",
-		"lint-staged": "^15.2.10",
+		"@acdh-oeaw/prettier-config": "^2.0.1",
+		"@changesets/changelog-github": "^0.5.1",
+		"@changesets/cli": "^2.29.7",
+		"@commitlint/cli": "^20.1.0",
+		"@commitlint/types": "^20.0.0",
+		"is-in-ci": "^2.0.0",
+		"lint-staged": "^16.2.6",
 		"npm-run-all": "^4.1.5",
-		"prettier": "^3.3.3",
-		"simple-git-hooks": "^2.11.1",
-		"typescript": "^5.6.2"
+		"prettier": "^3.6.2",
+		"simple-git-hooks": "^2.13.1",
+		"typescript": "^5.9.3"
 	},
 	"commitlint": {
 		"extends": "./commitlint.config.js"
